@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initialscale=1.0"> 
+ <title>Deadlock Prevention and Recovery Toolkit</title> 
+ <link rel="stylesheet" href="styles.css"> 
+</head> 
+<body> 
+ <h1>Deadlock Prevention and Recovery Toolkit</h1>
+ 
+ <div id="controls"> 
+    <h2>Input Resource Allocation</h2> 
+    <textarea id="allocationInput" placeholder="Enter allocation matrix 
+   (comma-separated)"></textarea> 
+    <textarea id="maxInput" placeholder="Enter max demand 
+   matrix"></textarea> 
+    <textarea id="availableInput" placeholder="Enter available 
+   resources"></textarea> 
+    <button onclick="runBankersAlgorithm()">Run Banker's 
+   Algorithm</button> 
+    <button onclick="detectDeadlock()">Detect Deadlock</button> 
+    <button onclick="simulateDeadlock()">Simulate Deadlock</button> 
+   </div> 
+    
+    <canvas id="graphCanvas" width="500" height="300"></canvas> 
+    
+   <div id="output"></div> 
+    
+    <script src="script.js"></script> 
+   </body>
